@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summer Sale</title>
+  <link rel="shortcut icon" href="Images/Summer 1.png" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <header class="container mx-auto px-4 lg:px-10 ">
+    <div class="flex justify-center items-center gap-14 bg-[#FBF4E4] pt-10">
+      <div>
+        <h3 class="text-2xl text-[#AAA8AC]">---SALE FEVER---</h3>
+        <h1 class="text-5xl text-[#AAA8AC] font-bold py-9">Purchase $200 or <br> above & get <span
+            class="text-red-600 font-bold">20% off</span></h1>
+        <p class="text-xl font-semibold text-[#AAA8AC] ">Use Promo Code <span
+            class="text-white bg-red-600 rounded-lg p-1 text-base">SELL200</span></p>
+      </div>
+      <div>
+        <img class="w-[75vh] h-[75vh]" src="./Images/Summer 1.png" alt="">
+      </div>
+    </div>
+  </header>
+
+
+  <main class="container mx-auto px-4 lg:px-10 text-[#AAA8AC] mt-20 bg-slate-50 ">
+    <!-- main container====================== -->
+    <div class="grid grid-cols-1 lg:grid-cols-5 gap-5">
+      <!-- product section ================ -->
+      <div class="col-span-4">
+        <!-- kitchen ============== -->
+        <div>
+          <h3 class="text-3xl font-bold">Kitchenwear</h3>
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-16">
+
+            <div class="flex flex-col items-center gap-2 shadow-2xl p-8 bg-white max-h-full rounded-xl card">
+              <div class="bg-slate-200 w-full h-full py-6 px-9 flex justify-center items-center">
+                <img src="./Images/Kitchenware/spon.png" alt="">
+              </div>
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+              </div>
+              <h3 class="text-2xl font-bold">K. Accessories</h3>
+              <span class="text-xl font-bold">$ 39.00</span>
+            </div>
+
+
+            <div class="flex flex-col items-center gap-2 shadow-2xl p-8 bg-white max-h-full rounded-xl card">
+              <div class="bg-slate-200 w-full h-full py-6 px-9 flex justify-center items-center">
+                <img src="./Images/Kitchenware/chopping-boat.png" alt="">
+              </div>
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+              </div>
+              <h3 class="text-2xl font-bold">G. Accessories</h3>
+              <span class="text-xl font-bold">$ 24.00</span>
+            </div>
+
+
+            <div class="flex flex-col items-center gap-2 shadow-2xl p-8 bg-white max-h-full rounded-xl card">
+              <div class="bg-slate-200 w-full h-full py-6 px-9 flex justify-center items-center">
+                <img src="./Images/Kitchenware/presurekukar.png" alt="">
+              </div>
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+              </div>
+              <h3 class="text-2xl font-bold">DIsh Cooker</h3>
+              <span class="text-xl font-bold">$ 99.00</span>
+            </div>
+
+          </div>
+        </div>
+        <!-- sportwear ================ -->
+        <div>
+
+        </div>
+        <!-- furniture ======================= -->
+        <div>
+
+        </div>
+
+      </div>
+      <!-- aside section================= -->
+      <div class="md:flex lg:col-span-1 mt-12">
+        <div>
+          <div class="bg-white p-6 rounded-md">
+            <h3 class="font-bold text-xl">Have Coupon ?</h3>
+            <div class=" join">
+              <input class="bg-black rounded-l-xl p-2" type="text" placeholder="Discount">
+              <button class=" text-white bg-red-600 p-2  rounded-r-xl">Apply</button>
+            </div>
+          </div>
+          <div class="my-8 p-4 bg-white rounded-md">
+            <div id="title-container"></div>
+            <hr class="my-4" />
+            <p class="text-xl font-bold py-2">
+              Total Price: $<span id="totalPrice"></span>
+            </p>
+
+            <p class="text-xl font-bold py-2">
+              Discount: $<span id="discountPrice"></span>
+            </p>
+            <p class="text-xl font-bold pb-2">
+              Total: $<span id="total"></span>
+            </p>
+            <hr class="my-4" />
+            <button class="btn btn-wide bg-[#F11A7B] text-white">
+              Make Purchase
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
